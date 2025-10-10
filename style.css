@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:fantasy;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+
+}
+#back{
+    width: 100%;
+    height: 100vh;
+}
+#back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+#workingarea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px, 0;
+}
+#nav img{
+    height: 60px;
+}
+#nleft, #nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+#nav a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600px;
+    color: #fff;
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+
+#heroleft{
+   min-width: 50%;
+
+}
+#heroleft .elem{
+    position: relative;
+    height: 5vw;
+   overflow: hidden;
+
+}
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+    
+}
+#heroleft .elem h1{
+    position: absolute;
+    line-height: 1;
+    top: 100%;
+    left: 0;
+    font-family: 'Impact', 'Anton', 'Bebas Neue', sans-serif;
+    color: #f8f8f8;
+    font-weight: 10;
+    font-size: 5vw;
+}
+#heroleft button{
+    pointer-events: all;
+    padding: 0.8vw, 2vw;
+    font-size: 2vw;
+    margin-top: 1vw;
+    font-family: "gilroy";
+}
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    color: white;
+
+}
+#heroright p{
+    font-size: 14px;
+    font-weight: 30;
+    text-align: right;
+
+}
+#heroright #imagediv{
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url("img_dgp.png");
+    background-size: cover;
+    background-position: center;
+
+
+}
+#heroright p:nth-child(3){
+    margin-bottom: 100px;
+
+}
